@@ -6,6 +6,7 @@ import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import ProductsNew from "../views/ProductsNew.vue";
+import ProductsShow from "../views/ProductsShow.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,7 @@ const routes = [
   { path: "/login", name: "login", component: Login },
   { path: "/logout", name: "logout", component: Logout },
   { path: "/products/new", name: "new-product", component: ProductsNew },
+  { path: "/products/:id", name: "show-product", component: ProductsShow },
 ];
 
 const router = new VueRouter({
