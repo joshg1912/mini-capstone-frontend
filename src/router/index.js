@@ -2,6 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import IndexProducts from "../views/IndexProducts.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
+import ProductsNew from "../views/ProductsNew.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +24,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   { path: "/products", name: "index-products", component: IndexProducts },
+  { path: "/signup", name: "sign-up", component: Signup },
+  { path: "/login", name: "login", component: Login },
+  { path: "/logout", name: "logout", component: Logout },
+  { path: "/products/new", name: "new-product", component: ProductsNew },
 ];
 
 const router = new VueRouter({

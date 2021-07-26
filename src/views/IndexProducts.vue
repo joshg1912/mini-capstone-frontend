@@ -3,6 +3,7 @@
     <div v-for="product in products" :key="product.id">
       <h1>Name: {{ product.name }}</h1>
       <p>Price: {{ product.price }}</p>
+      <img v-bind:src="product.image_url" alt="product.title" />
     </div>
   </div>
 </template>
